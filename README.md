@@ -47,6 +47,7 @@ Each episode terminates if the car agent either hits an obstacle or achieves a m
 
 ## RL Algorithm 
 We experimented with our Car Driving Simulation Environment using Ray RLLib's Proximal Policy Optimization(PPO) algorithm. PPO is an on-policy algorithm that can work with both discrete and continuous environments. The hyperparameters we used for training PPO algorithm on our Car Environment are as follows:
+
         {"num_gpus": 0,
         "num_workers": 4,
         "framework": "tf",
@@ -61,6 +62,24 @@ We experimented with our Car Driving Simulation Environment using Ray RLLib's Pr
         "kl_target": 0.01}
 
 
+We can also provide stop criteria to the training algorithm as follows:
+
+stop_criteria = {
+        "training_iteration": 100,
+        "episode_reward_mean": 1000,
+    }
 
 ## Results
+The results of training the RLLib PPO algorithm on this Car driving algorithm are as follows:
+The episode reward mean graph: We observe that the Car agent is learning over a while to obtain greater rewards
+![episode_reward_mean](https://github.com/BhargaviChevva18/cs272-custom-env/assets/112223228/f7a66d25-bf15-4f7c-95ad-2b730e924c32)
+
+The episode length mean graph: As expected, the length of the episode is increasing on training, proving that the Car agent is learning to avoid obstacles
+![episode_len_mean](https://github.com/BhargaviChevva18/cs272-custom-env/assets/112223228/3c23c0fa-22d7-449c-9f24-91fa44b87881)
+
+The policy loss graph: We observe here that the loss is decreasing as the agent trains over a period of time
+![policy_loss](https://github.com/BhargaviChevva18/cs272-custom-env/assets/112223228/24178fad-155f-48bc-af15-a5efbb4b08a6)
+
+The total loss graph: The decreasing curve indicates that the agent is learning
+![total_loss](https://github.com/BhargaviChevva18/cs272-custom-env/assets/112223228/262b3ef6-d709-4074-b055-586ac430a3d5)
 
