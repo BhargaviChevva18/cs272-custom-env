@@ -34,7 +34,7 @@ In order to avoid obstacles, the car agent can shift across the three lanes of t
 
 ## Rewards
 <!-- See the Cart Pole Env example https://gymnasium.farama.org/environments/classic_control/cart_pole/ -->
-In order to encourage our car agent to avoid obstacles, we gave it a +1 reward for every time step it avoids an obstacle. Car agent also receives a +!0 bonus if it is successfully able to avoid obstacles in the past 1000 steps. The agent receives a negative reward of -1 if it hits an obstacle and the game terminates.
+In order to encourage our car agent to avoid obstacles, we gave it a +1 reward for every time step it avoids an obstacle. Car agent also receives a +10 bonus if it is successfully able to avoid obstacles in the past 1000 steps. The agent receives a negative reward of -100 if it hits an obstacle and the game terminates.
 
 ## Starting State
 <!-- See the Cart Pole Env example https://gymnasium.farama.org/environments/classic_control/cart_pole/ -->
