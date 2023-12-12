@@ -3,6 +3,7 @@
 <!-- Around 200 Words -->
 <!-- Cover (1) What problem you are solving, (2) Who will use this RL module and be happy with the learning, and (3) a brief description of the results -->
 Recent advancements in Artificial Intelligence have enabled major advancements in developing autonomous driving cars. Training these cars in real-world environments is a challenge due to the high costs and inherent risks involved. Our project aims to create a simulated environment for self-driving cars to train in a virtual environment. We created an elemental yet crucial version of the real-world environment in the form of a three-lane highway with our car agent moving in the forward direction. The goal of our project is to train the car agent to avoid obstacles by shifting across the three lanes. For simplicity, our obstacles are currently stationary and the velocity of our car agent is constant.
+
 ![env](https://github.com/BhargaviChevva18/cs272-custom-env/assets/112223228/8313783d-4936-4b72-99b3-c6141d5d57ea)
 
 
