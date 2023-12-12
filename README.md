@@ -15,10 +15,10 @@ The state space of the environment involves:
 
 | No. | Feature                      | Min | Max |
 |-----|------------------------------|-----|------|
-| 1.  |X coordinate of the car agent |  0  | 120  |
+| 1.  |X coordinate of the car agent |  0  | 90  |
 | 2.  |Y coordinate of the car agent | 750 | 750  |
-| 3.  |X coordinate of the obstacle  |  0  | 120  |
-| 4.  |Y coordinate of the obstacle  |  0  | 800  |
+| 3.  |X coordinate of the obstacle  |  0  | 90  |
+| 4.  |Y coordinate of the obstacle  |  0  | 750  |
 
 The values at the right denote the possible values for each component of state. The value of the y coordinate of the car agent is constant because we visualize the highway through the lens of the car, i.e., looks like with each passing time step, the environment moves towards the car and the car remains in the same position. 
 
